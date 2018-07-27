@@ -1,0 +1,8 @@
+.swiper{
+    height:421.88rpx;
+}
+
+.swiper image{
+    height:421.88rpx;
+    width:100%;
+}

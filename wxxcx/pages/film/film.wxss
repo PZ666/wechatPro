@@ -1,0 +1,87 @@
+.navTab{
+    display: flex;
+    justify-content: space-between;
+    height: 90rpx;
+   border-bottom:solid #fe6e00 1px;
+}
+.navTab>view{
+    text-align: center;
+    width:100%;
+    line-height: 90rpx;
+    color: #6a6a6a;
+}
+.navTab>.active{
+    border-bottom: 3px solid #fe6e00;
+    color: #fe6e00;
+}
+.container{
+    padding:0 30rpx;
+}
+
+/* 正在热映 */
+.play_row{
+    height:250rpx;
+    padding: 40rpx 0;
+    display: flex;
+    border-bottom: dashed 1px #c9c9c9;
+}
+.play_row>image{
+    width:120rpx;
+    height: 165.12rpx;
+}
+.play_row>.film-desc{
+    width:100%;
+    padding-left: 30rpx;
+}
+.play_row>.film-desc>.movie_name>.film-name{
+    font-size: 32rpx;
+    line-height: 64rpx;
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.play_row>.film-desc>.movie_name{
+    display: flex;
+    justify-content: space-between;
+}
+.play_row>.film-desc>.movie_name>.film-score{
+    font-size: 32rpx;
+    line-height: 64rpx;
+    color: #fc7103;
+    margin-right: 80rpx;
+}
+.play_row>.film-desc>.film-intro{
+    height: 48rpx;
+    line-height: 48rpx;
+    color: #8e8e8e;
+    font-size: 24rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+
+}
+.play_row>.film-desc>.film-counts{
+    display: flex;
+    height: 48rpx;
+}
+.play_row>.film-desc>.film-counts>.count{
+    line-height: 48rpx;
+    color: #8e8e8e;
+    font-size: 24rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 80rpx;
+}
+
+.play_row>.film-desc>.film-counts>.watchCount{
+    line-height: 48rpx;
+    color: #8e8e8e;
+    font-size: 24rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+

@@ -1,0 +1,35 @@
+<!--logs.wxml-->
+<view class="container">
+    <view class="navTab">
+        <view class="{{type==='now-playing'?'active':''}}" bindtap="handleChangeType">正在热映</view>
+        <view class="{{type==='coming-soon'?'active':''}}" bindtap="handleChangeType">即将上映</view>
+    </view>
+    <view class="content">
+        <scroll-view 
+            scroll-y="true" 
+            enable-back-to-top="true"
+            bindscrolltolower="handleScrollBottom"
+            style="height:555px"
+            >
+            <view class="play_row" 
+                wx:for="{{nowPlaying}}" 
+                wx:key="{{index}}" 
+                data-id="{{item.id}}"
+                bindtap="handledetail"
+                >
+                <image src="{{item.cover.origin}}" />
+                <view class="film-desc">
+                    <view class="movie_name">
+                        <text class="film-name">{{item.name}}</text>
+                        <text class="film-score">{{item.grade}}></text>
+                    </view>
+                    <view class="film-intro">{{item.intro}}</view>
+                    <view class="film-counts">
+                        <text class="count">{{item.cinemaCount}}家影院上映</text>
+                        <text class="watchCount">{{item.watchCount}}人购票</text>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

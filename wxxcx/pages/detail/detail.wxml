@@ -1,0 +1,37 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+    <image class="head_img" src="{{detail.cover.origin}}" />
+    <view class="detal_con">    
+        <view class="title">
+            <text>影片简介</text>    
+        </view>
+        <view class="detal_dao">
+            <text decode="{{true}}">导&ensp;&ensp;&ensp;&ensp;演 :</text>
+            <text decode="{{true}}"> {{detail.director}}</text>
+        </view> 
+        <view class="detal_dao">
+            <text decode="{{true}}">主&ensp;&ensp;&ensp;&ensp;演 :</text>
+            <text> {{detail.actors}}</text>
+        </view> 
+        <view class="detal_dao">
+            <text>地区语言 :</text>
+            <text> {{detail.nation}}</text>
+            <text> {{detail.language}}</text>
+        </view>
+        <view class="detal_dao">
+            <text decode="{{true}}">类&ensp;&ensp;&ensp;&ensp;型 :</text>
+            <text> {{detail.category}}</text>
+        </view>
+        <view class="detal_dao">
+            <text>上映日期 :</text>
+            <text> {{detail.premiereAt}}上映</text>
+        </view>
+        <view class="detal_cc">
+            <text>{{detail.synopsis}}</text>
+        </view>
+        
+    </view>
+    <view class="detal_btn">
+        <button class="btn">立即购票</button>
+    </view>
+</view>

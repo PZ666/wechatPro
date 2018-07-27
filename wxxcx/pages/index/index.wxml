@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<import  src="../template/swiper/swiper" />
+<view class="container">
+    <template is="banner-swiper" />
+    <view class="film">
+        <view class="now-playing" >
+            <view class="row" wx:for="{{nowPlaying}}" wx:key="{{index}}" data-id="{{item.id}}"
+                bindtap="handledetail">
+                <image src="{{item.cover.origin}}"/>
+                <view class="movie">
+                    <view class="movie_name">
+                        <text class="name">{{item.name}}</text>
+                        <text class="count">{{item.cinemaCount}}家上映{{item.watchCount}}人购票</text>
+                    </view>
+                    <view class="movie_score">
+                        <text>{{item.grade}}</text>
+                    </view>
+                </view>
+            </view>
+            <view class="more-button">更多热映电影</view>
+        </view>
+        <view class="dividing-line">
+            <view class="upcoming">即将上映</view>
+        </view>
+
+        <view class="coming-soon" >
+            <view class="soon_row" wx:for="{{comingSoon}}" wx:key="{{index}}" data-id="{{item.id}}"
+                bindtap="handledetail">
+                <image src="{{item.cover.origin}}"/>
+                <view class="soon_movie">
+                    <text class="soon_name">{{item.name}}</text>
+                    <text class="soon_time" >{{item.premiereAt}}上映</text>
+                </view>
+            </view>
+        </view>
+         <view class="more-button">更多即将上映电影</view>
+    </view>
+</view>

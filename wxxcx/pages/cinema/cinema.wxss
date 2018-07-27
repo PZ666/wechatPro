@@ -1,0 +1,73 @@
+/* pages/cinema/cinema.wxss */
+.cinema-view{
+    background-color: #fff;
+    width: 100%;
+}
+.district .active{
+    display: none
+}
+.district .title {
+
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 28rpx;
+    padding-left: 32rpx;
+    background: #e1e1e1;
+    margin-bottom: 2rpx;
+    color: #636363;
+    cursor: pointer;
+}
+.cinema-wrap {
+    margin: 0 auto;
+    border-bottom: 1px solid #e1e1e1;
+    cursor: pointer;
+    width: 100%;
+    height: 196rpx;
+}
+.cinema {
+    border-radius: 5px;
+    padding: 20rpx 0 24rpx 32rpx;
+    cursor: pointer;
+}
+.cinema-title {
+    width: 75%;
+    min-width: 460rpx;
+    float: left;
+    cursor: pointer;
+    overflow: hidden;
+}
+.pull-right {
+    float: right !important;
+}
+.nav {
+    padding-right: 30rpx;
+    line-height: 72rpx;
+    color: #c6c6c6;
+}
+.cinema-title-cinemaname {
+    display: inline-block;
+    font-size: 32rpx;
+    width: 100%;
+    margin-bottom: 10rpx;
+}
+.cinema-title-cinemaname text:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: text-top;
+    max-width: 80%;
+}
+.cinema-title-address {
+    display: inline-block;
+    font-size:24rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    color: #ccc;
+}
+.cinema-title-location {
+    font-size: 24rpx;
+    color: #ccc;
+}

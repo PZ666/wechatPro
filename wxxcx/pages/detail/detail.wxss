@@ -1,0 +1,44 @@
+
+.container>.head_img{
+    width: 100%;
+    height:422rpx
+}
+.container .title{
+    width: 100%;
+    height: 48rpx;
+    margin:32rpx 38rpx 32rpx 0;
+
+}
+.container>.title>text{
+    line-height: 48rpx;
+    font-size: 32rpx
+}
+
+.container>.detal_con{
+    font-size: 24rpx;
+    margin-left: 38rpx;
+    height:576rpx;
+}
+.container>.detal_con>.detal_dao{
+    height: 36rpx;
+    line-height: 36rpx;
+    margin-bottom: 20rpx;
+    
+}
+.container>.detal_con>.detal_cc{
+    padding-right: 40rpx;
+}
+.container>.detal_btn{
+    display: flex;
+    justify-content: center;
+
+}
+.container .btn{
+    line-height: 72rpx;
+    font-size: 28rpx;
+    width: 312rpx;
+    height: 72rpx;
+    border-radius: 32rpx;
+    background-color: #fe8233;
+    color: #fff;
+}

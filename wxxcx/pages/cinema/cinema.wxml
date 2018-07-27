@@ -1,0 +1,33 @@
+<view>
+    <view class="district" wx:for="{{cinemaAddress}}" wx:key="{{index}}" >
+        <view class="title" data-type="{{item.name}}"  bindtap="changeList">
+            <text>{{item.name}}</text>     
+        </view>
+        <view  class="{{item.type?'active':''}}" >
+            <view class="content" wx:for="{{item.data}}" wx:key="{{index}}" >
+                <view class="cinema-wrap" >
+                    <view class="cinema clearfix">
+                        <view class="cinema-title" >
+                            <view class="cinema-title-cinemaname" >
+                                <text >{{item.name}}</text>
+                                <!-- <text class="iconfont icon-zuo book" ></text>
+                                <text class="iconfont icon-tong ticket" ></text> -->
+                            </view>
+                
+                            <text class="cinema-title-address" >
+                                <text >{{item.address}}</text>
+                            </text>
+                            <view class="cinema-title-location" >
+                                <text>距离</text>
+                                <text >未知</text>
+                            </view>
+                        </view>
+                        <text class="pull-right nav" >
+                            <text class="book" ></text>
+                        </text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

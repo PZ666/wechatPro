@@ -1,0 +1,7 @@
+/**app.wxss**/
+view{
+    box-sizing: border-box;
+}
+page{
+    background:#eee;
+}
